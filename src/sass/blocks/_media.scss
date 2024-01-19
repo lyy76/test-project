@@ -1,0 +1,278 @@
+@media (max-width: 1200px) {
+    .test {
+
+        &__sidebar {
+            height: 230px;
+            width: 100%;
+            position: static;
+            padding: 36px 28px 58px
+        }
+
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__dash {
+            position: absolute;
+            top: 36px;
+            left: 28px;
+        }
+
+        &__subdash {
+            margin: 55px 0 22px 11px;
+        }
+
+        &__tabs {
+            flex-direction: row;
+            justify-content: space-around;
+            position: absolute;
+            top: 85px;
+            left: 180px;
+            width: 80%;
+        }
+
+        &__tab {
+            width: 135px;
+            margin-top: 41px;
+        }
+
+        &__evano {
+            margin-top: 0;
+            align-items: center;
+            justify-content: end;
+        }
+
+        &__hello {
+            margin-left: 0;
+            padding: 30px 20px 30px;
+            background: #fafbff;
+        }
+
+        h1 {
+            margin-left: 18px;
+        }
+
+        &__all {
+            margin-top: 35px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .test {
+        &__subdash {
+            width: 94px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__tabs {
+            left: 170px;
+            width: 75%;
+        }
+
+        &__tab {
+            width: 120px;
+            height: 40px;
+            font-size: 12px;
+        }
+
+        &__icons {
+            margin: 0 3px 0 5px;
+        }
+
+        &__nav {
+            padding: 0 8px 14px 8px;
+        }
+
+        &__list {
+            margin-left: 30px;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+
+        &__item {
+            padding: 14px 8px;
+        }
+
+        &__line-mini {
+            width: 98%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .test {
+        &__subdash {
+            margin: 15px 0 22px 11px;
+        }
+
+        &__tabs {
+            top: 140px;
+            left: 55px;
+            width: 80%;
+        }
+
+        &__tab {
+            width: 110px;
+        }
+
+        &__arrow {
+            margin-right: 0;
+        }
+
+        &__blog {
+            display: none;
+        }
+
+        &__all {
+            min-height: 0;
+        }
+
+        &__ul {
+            flex-direction: column;
+        }
+
+        &__link {
+            width: 135px;
+        }
+
+        &__list {
+            margin-left: 0;
+        }
+
+        &__button {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        &__line-mini {
+            width: 100%;
+        }
+
+        .cdp_i {
+            margin: 0 3px 6px;
+            height: 20px;
+            min-width: 21px;
+            padding: 3px 6px;
+        }
+
+        &__numbering {
+            padding: 32px 8px 41px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slick-dots {
+            margin: 0 auto;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+
+
+            li {
+                display: block;
+
+                button {
+                    font-size: 12px;
+                    margin: 0 3px 6px;
+                    height: 20px;
+                    min-width: 21px;
+                    padding: 3px 6px;
+                    border-radius: 4px;
+                    border: 1px solid #EEE;
+                    background: #F5F5F5;
+                    padding: 0;
+
+                }
+            }
+
+            .slick-active button {
+                background: #5932EA;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .test {
+        &__sidebar {
+            min-height: 500px;
+            padding: 36px 8px 16px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__dash {
+            left: 60px;
+            transform: translateY(60px);
+        }
+
+        &__subdash {
+            margin: 0;
+            position: absolute;
+            top: 150px;
+            left: 70px;
+        }
+
+        &__tabs {
+            flex-direction: column;
+            top: 180px;
+            left: 25%;
+            width: 50%;
+        }
+
+        &__tab {
+            margin-top: 5px;
+            width: 200px;
+            height: 46px;
+        }
+
+        &__icons {
+            margin: 0 6px 0 11px;
+        }
+
+        &__arrow {
+            margin-right: 12px;
+        }
+
+        &__evano {
+            position: absolute;
+            left: 10px;
+            top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        &__custo {
+            padding: 30px 33px;
+            flex-direction: column;
+        }
+
+        &__members {
+            text-align: center;
+        }
+
+        &__numbering {
+            flex-direction: column;
+        }
+    }
+}
