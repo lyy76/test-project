@@ -1,11 +1,42 @@
+@media (max-width: 1439px) {
+    .hello {
+        padding: 41px 8px 258px 61px;
+
+        &__all {
+            width: 880px;
+        }
+
+        &__custo {
+            padding: 30px 33px 40px 28px;
+        }
+
+        &__nav {
+            padding: 0 8px 14px 18px;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+
+        &__item {
+            padding: 20px 8px 19px 18px;
+        }
+
+        &__line-mini {
+            width: 97%;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .test {
+        width: 100%;
 
         &__sidebar {
-            height: 230px;
+            min-height: 230px;
             width: 100%;
             position: static;
-            padding: 36px 28px 58px
+            padding: 36px 10px;
         }
 
         &__wrapper {
@@ -19,20 +50,21 @@
         }
 
         &__subdash {
-            margin: 55px 0 22px 11px;
+            margin: 68px 0 22px 28px;
         }
 
         &__tabs {
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             position: absolute;
-            top: 85px;
+            top: 95px;
             left: 180px;
             width: 80%;
         }
 
         &__tab {
-            width: 135px;
+            width: 150px;
+            height: 41px;
             margin-top: 41px;
         }
 
@@ -40,13 +72,14 @@
             margin-top: 0;
             align-items: center;
             justify-content: end;
+            margin-right: 20px;
         }
+    }
 
-        &__hello {
-            margin-left: 0;
-            padding: 30px 20px 30px;
-            background: #fafbff;
-        }
+    .hello {
+        margin-left: 0;
+        padding: 30px 20px 30px;
+        background: #fafbff;
 
         h1 {
             margin-left: 18px;
@@ -55,14 +88,20 @@
         &__all {
             margin-top: 35px;
             width: 100%;
+            height: 100%;
+            box-shadow: 2px 4px 10px 4px rgba(226, 236, 249, 0.50);
         }
     }
 }
 
 @media (max-width: 991px) {
     .test {
+        position: static;
+
         &__subdash {
             width: 94px;
+            margin: 76px 0 22px 12px;
+
         }
 
         &__subtitle {
@@ -70,19 +109,22 @@
         }
 
         &__tabs {
-            left: 170px;
-            width: 75%;
+            top: 105px;
+            left: 130px;
         }
 
         &__tab {
-            width: 120px;
+            width: 115px;
             height: 40px;
             font-size: 12px;
         }
 
         &__icons {
-            margin: 0 3px 0 5px;
+            margin: 0 5px 0 5px;
         }
+    }
+
+    .hello {
 
         &__nav {
             padding: 0 8px 14px 8px;
@@ -108,24 +150,57 @@
 
 @media (max-width: 767px) {
     .test {
+        &__sidebar {
+            min-height: 450px;
+            padding: 36px 8px 16px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
         &__subdash {
-            margin: 15px 0 22px 11px;
+            margin: 0;
+            position: absolute;
+            top: 100px;
+            left: 65px;
         }
 
         &__tabs {
-            top: 140px;
-            left: 55px;
-            width: 80%;
+            width: 200px;
+            flex-direction: column;
+            top: 135px;
+            left: 90px;
         }
 
         &__tab {
-            width: 110px;
+            margin-top: 10px;
+            width: 200px;
+            height: 46px;
+
+            &:nth-child(2) {
+                margin-left: 65px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 115px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 165px;
+            }
+
+            &:nth-child(5) {
+                margin-left: 215px;
+            }
         }
 
-        &__arrow {
-            margin-right: 0;
+        &__icons {
+            margin: 0 6px 0 11px;
         }
+    }
 
+    .hello {
         &__blog {
             display: none;
         }
@@ -211,7 +286,7 @@
 @media (max-width: 575px) {
     .test {
         &__sidebar {
-            min-height: 500px;
+            min-height: 470px;
             padding: 36px 8px 16px;
         }
 
@@ -220,28 +295,42 @@
         }
 
         &__dash {
-            left: 60px;
-            transform: translateY(60px);
+            left: 20px;
+            transform: translateY(65px);
         }
 
         &__subdash {
             margin: 0;
             position: absolute;
-            top: 150px;
-            left: 70px;
+            top: 155px;
+            left: 38px;
         }
 
         &__tabs {
             flex-direction: column;
             top: 180px;
-            left: 25%;
+            left: 60px;
             width: 50%;
         }
 
         &__tab {
             margin-top: 5px;
-            width: 200px;
-            height: 46px;
+
+            &:nth-child(2) {
+                margin-left: 30px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 60px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 90px;
+            }
+
+            &:nth-child(5) {
+                margin-left: 120px;
+            }
         }
 
         &__icons {
@@ -254,10 +343,12 @@
 
         &__evano {
             position: absolute;
-            left: 10px;
+            left: 8px;
             top: 40px;
         }
+    }
 
+    .hello {
         h1 {
             text-align: center;
         }
@@ -265,6 +356,10 @@
         &__custo {
             padding: 30px 33px;
             flex-direction: column;
+        }
+
+        &__input {
+            margin-top: 10px;
         }
 
         &__members {
