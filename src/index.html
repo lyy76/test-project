@@ -22,7 +22,7 @@
                 <div class="test__clause">
                     <div class="test__dash">
                         <div class="test__assets">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 37 37"
                                 fill="none">
                                 <path
                                     d="M18.5003 34.8876C17.4674 34.8876 16.419 34.6564 15.602 34.1784L7.12284 29.2914C3.66951 26.9634 3.45367 26.6089 3.45367 22.9551V14.0443C3.45367 10.3905 3.65409 10.0359 7.04576 7.73887L15.5865 2.80553C17.2053 1.86512 19.749 1.86512 21.3678 2.80553L29.8778 7.70803C33.3311 10.0359 33.547 10.3905 33.547 14.0443V22.9397C33.547 26.5934 33.3465 26.948 29.9549 29.2451L21.414 34.1784C20.5815 34.6564 19.5332 34.8876 18.5003 34.8876ZM18.5003 4.42428C17.8528 4.42428 17.2207 4.54762 16.7736 4.8097L8.29451 9.7122C5.78159 11.408 5.78159 11.408 5.78159 14.0443V22.9397C5.78159 25.5759 5.78159 25.5759 8.35617 27.318L16.7736 32.1743C17.6832 32.6984 19.3328 32.6984 20.2424 32.1743L28.7215 27.2718C31.219 25.5759 31.219 25.5759 31.219 22.9397V14.0443C31.219 11.408 31.219 11.408 28.6445 9.66595L20.227 4.8097C19.7799 4.54762 19.1478 4.42428 18.5003 4.42428Z"
@@ -32,7 +32,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <h2 class="test__title">Dashboard</h2>
+                        <h1 class="test__title">Dashboard</h1>
                         <div class="test__descr">v.01</div>
                     </div>
 
@@ -212,7 +212,7 @@
         </div>
 
         <div class="hello">
-            <h1>Hello Evano &#128075;&#127995;,</h1>
+            <h2>Hello Evano &#128075;&#127995;,</h2>
             <div class="hello__all">
 
                 <div class="hello__custo">
@@ -221,9 +221,11 @@
                         <div class="hello__members-subtitle">Active Members</div>
                     </div>
                     <div class="hello__input">
-                        <form action="#">
-                            <input name="search" required placeholder="search" type="search">
-                            <div class="hello__svg">
+                        <form action="#" class="hello__form">
+                            <div class="hello__input">
+                                <input name="search" required placeholder="search" type="text">
+                            </div>
+                            <button class="hello__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none">
                                     <path
@@ -233,7 +235,7 @@
                                     <path d="M21 21L16.65 16.65" stroke="#7E7E7E" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            </div>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -246,7 +248,7 @@
                             <li class="hello__link"><a href="#">Phone Number</a></li>
                             <li class="hello__link"><a href="#">Email</a></li>
                             <li class="hello__link"><a href="#" class="hello__list">Country</a></li>
-                            <li class="hello__link"><a href="#" class="hello__list">Status</a></li>
+                            <li class="hello__link"><a href="#" class="hello__list-list">Status</a></li>
                         </ul>
                     </div>
                     <hr class="hello__line">
@@ -715,7 +717,7 @@
 
                 <div class="hello__numbering">
                     <div class="hello__text">Showing data 1 to 8 of 256K entries</div>
-                    <div class="content_detail__pagination cdp" actpage="1">
+                    <div class="cdp" data-actpage="1">
                         <a href="#!-1" class="cdp_i">&laquo;</a>
                         <a href="#!1" class="cdp_i">1</a>
                         <a href="#!2" class="cdp_i">2</a>

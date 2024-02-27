@@ -1,20 +1,20 @@
 .hello {
     min-height: 100vh;
     margin-left: 306px;
-    padding: 41px 78px 258px 71px;
+    padding: 38px 0 0 71px;
     background-color: #FAFBFF;
 
-    h1 {
+    h2 {
         color: #000;
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 0;
+        text-align: left;
     }
 
     &__all {
         margin-top: 51px;
         width: 968px;
-        height: 812px;
         background-color: #fff;
         border-radius: 30px;
     }
@@ -36,6 +36,7 @@
 
         &-subtitle {
             color: #16C098;
+            font-size: 14px;
             font-weight: 400;
             letter-spacing: -0.14px;
         }
@@ -64,7 +65,8 @@
         top: 0;
         left: 8px;
         margin: 8px 0 8px;
-        cursor: pointer;
+        border: none;
+        background: #F9FBFF;
     }
 
     &__nav {
@@ -81,7 +83,7 @@
     }
 
     &__link {
-        width: 120px;
+        width: 130px;
         font-size: 12px;
         font-weight: 500;
         letter-spacing: -0.14px;
@@ -97,7 +99,11 @@
     }
 
     &__list {
-        margin-left: 20px;
+        margin-left: 45px;
+    }
+
+    &__list-list {
+        margin-left: 60px;
     }
 
     &__line {
@@ -118,8 +124,8 @@
     }
 
     &__line-mini {
-        width: 888px;
-        margin: 0 auto;
+        width: 880px;
+        margin: 0 44px 0 38px;
     }
 
     &__button {
@@ -139,11 +145,6 @@
     }
 
     &__button-red {
-        display: flex;
-        padding: 4px 12px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4px;
         border: 1px solid #DF0404;
         background: #FFC5C5;
         color: #DF0404;
@@ -180,16 +181,16 @@
             transition: background 250ms;
             display: inline-block;
             text-transform: uppercase;
-            margin: 0 3px 6px;
+            margin: 0 3px 5px;
             height: 24px;
-            min-width: 25px;
+            width: 26px;
             color: #404B52;
             font-size: 12px;
             font-weight: 500;
             line-height: 100%;
             letter-spacing: -0.12px;
             display: none;
-            padding: 6px 9px;
+            padding: 5px;
             border-radius: 4px;
             border: 1px solid #EEE;
             background: #F5F5F5;
@@ -207,13 +208,13 @@
             color: #fff;
         }
 
-        &:not([actpage="1"]) &_i:nth-child(1) {
+        &:not([data-actpage="1"]) &_i:nth-child(1) {
             display: inline-block;
         }
     }
 
     @for $i from 1 through 80 {
-        .cdp[actpage="#{$i}"] {
+        .cdp[data-actpage="#{$i}"] {
             .cdp_i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
                 display: inline-block;
                 pointer-events: none;
@@ -240,7 +241,7 @@
                 color: #fff;
                 display: inline-block;
 
-                .cdp_i:last-child {
+                &:last-child {
                     display: inline-block;
                 }
             }

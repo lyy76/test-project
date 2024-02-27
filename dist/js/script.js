@@ -4,7 +4,7 @@ $('ul.test__tabs').on('click', 'li:not(.test__tab_active)', function () {
 });
 
 window.onload = function () {
-    var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
+    var paginationPage = parseInt($('.cdp').attr('data-actpage'), 10);
     $('.cdp_i').on('click', function () {
         var go = $(this).attr('href').replace('#!', '');
         if (go === '+1') {
@@ -14,7 +14,7 @@ window.onload = function () {
         } else {
             paginationPage = parseInt(go, 10);
         }
-        $('.cdp').attr('actpage', paginationPage);
+        $('.cdp').attr('data-actpage', paginationPage);
     });
 };
 
