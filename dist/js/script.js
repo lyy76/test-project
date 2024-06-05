@@ -4,8 +4,8 @@ $('ul.test__tabs').on('click', 'li:not(.test__tab_active)', function () {
 });
 
 window.onload = function () {
-    var paginationPage = parseInt($('.cdp').attr('data-actpage'), 10);
-    $('.cdp_i').on('click', function () {
+    var paginationPage = +parseInt($('.cdp').attr('data-actpage'), 10);
+    $('.cdp_step').on('click', function () {
         var go = $(this).attr('href').replace('#!', '');
         if (go === '+1') {
             paginationPage++;
@@ -51,4 +51,3 @@ $(document).ready(function () {
         ]
     });
 });
-

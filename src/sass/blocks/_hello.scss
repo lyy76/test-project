@@ -178,7 +178,7 @@
 
         animation: cdp-in 500ms ease both;
 
-        &_i {
+        &_step {
             text-decoration: none;
             transition: background 250ms;
             display: inline-block;
@@ -203,71 +203,68 @@
             &:nth-last-child(2) {
                 display: inline-block;
             }
-        }
 
-        &_i:hover {
-            border: 1px solid #5932EA;
-            background: #5932EA;
-            color: #fff;
-        }
-
-        &:not([data-actpage="1"]) &_i:nth-child(1) {
-            display: inline-block;
+            &:hover {
+                border: 1px solid #5932EA;
+                background: #5932EA;
+                color: #fff;
+            }
         }
     }
 
-    @for $i from 1 through 80 {
+    @for $i from 1 through 32 {
         .cdp[data-actpage="#{$i}"] {
-            .cdp_i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
-                display: inline-block;
-                pointer-events: none;
-                color: transparent;
-                border-color: transparent;
+            .cdp_step {
+                &:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
+                    display: inline-block;
+                    pointer-events: none;
+                    color: transparent;
+                    border-color: transparent;
 
-                &:after {
-                    content: '...';
-                    color: #000;
-                    margin-left: -6px;
+                    &:after {
+                        content: '...';
+                        color: #000;
+                        margin-left: -9px;
+                    }
                 }
-            }
 
-            .cdp_i:nth-child(#{$i - 1}):not(:first-child) {
-                display: inline-block;
-            }
-
-            .cdp_i:nth-child(#{$i}):not(:first-child) {
-                display: inline-block;
-            }
-
-            .cdp_i:nth-child(#{$i + 1}) {
-                background-color: #5932EA;
-                color: #fff;
-                display: inline-block;
-
-                &:last-child {
+                &:nth-child(#{$i - 1}):not(:first-child) {
                     display: inline-block;
                 }
-            }
 
-            .cdp_i:nth-child(#{$i + 2}):not(:last-child) {
-                display: inline-block;
-            }
+                &:nth-child(#{$i}):not(:first-child) {
+                    display: inline-block;
+                }
 
-            .cdp_i:nth-child(#{$i + 3}):not(:last-child) {
-                display: inline-block;
-            }
+                &:nth-child(#{$i + 1}) {
+                    background-color: #5932EA;
+                    color: #fff;
+                    display: inline-block;
 
-            .cdp_i:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
-                display: inline-block;
-                pointer-events: none;
-                color: transparent;
-                border-color: transparent;
+                    &:last-child {
+                        display: inline-block;
+                    }
+                }
 
+                &:nth-child(#{$i + 2}):not(:last-child) {
+                    display: inline-block;
+                }
 
-                &:after {
-                    content: '...';
-                    color: #000;
-                    margin-left: -6px;
+                &:nth-child(#{$i + 3}):not(:last-child) {
+                    display: inline-block;
+                }
+
+                &:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
+                    display: inline-block;
+                    pointer-events: none;
+                    color: transparent;
+                    border-color: transparent;
+
+                    &:after {
+                        content: '...';
+                        color: #000;
+                        margin-left: -9px;
+                    }
                 }
             }
         }
